@@ -1,0 +1,25 @@
+{
+  "name": "parkville-parking",
+  "version": "1.0.0",
+  "description": "This is a Parking management system that will be used to manage different data regarding the parking of different categories of vehicles with in the park.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Balenzi Phillip",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "connect-flash": "^0.1.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.2",
+    "express-validator": "5.3.1",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,63 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", type="text/css", href="/css/vehicleEntrycss.css")
+title Vehicle Register
+.center
+  h1 Car Parking Section
+  form#form(name="entryForm", action="/vehicleEntry", method="POST")
+    .v-category
+      label(for="category") Vehicle Category:
+      select#select(name="category")
+        option(value="default", selected) (select one option)
+        option(value="t") Truck
+        option(value="pc") Personal Car
+        option(value="t") Taxi
+        option(value="c") Coaster
+        option(value="b") Bodaboda
+    .duration
+      label(for="duration") Duration:
+      select#select(name="category2")
+        option(value="default", selected) (select one option)
+        option(value="d") Day
+        option(value="n") Night
+        option(value="l") Less than 3hrs
+    .txt-field
+      input(type="text", name="nin", size="14", onblur="ninValidate(14)")
+      span
+      label(for="nin") NIN(for only bodabodas)
+    .txt-field
+      input(type="text", name="driversname", size="30", onblur="driversnameValidate(2,30)")
+      span
+      label(for="driversname") Driver's Name
+    .txt-field
+      input(type="text", name="phonenumber")
+      span
+      label Phone Number
+    .txt-field
+      input(type="text", name="numberplate")
+      span
+      label Number Plate
+    .txt-field
+      input(type="text", name="color")
+      span
+      label Color
+    .txt-field
+      input(type="text", name="arrivaltime")
+      span
+      label Arrival Time
+    .txt-field
+      input(type="text", name="date")
+      span
+      label Date
+    .txt-field
+      input(type="text", name="model")
+      span
+      label Model
+    .txt-field
+      input(type="text", name="charge")
+      span
+      label Charge
+    .submit
+      input(type="submit", name="submit", value="submit")
+script(src="/public/validation/vehicleEntryValidate.js")

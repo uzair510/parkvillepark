@@ -1,0 +1,42 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", type="text/css", href="/css/departureReceiptcss.css")
+title Departure Receipt
+.center
+  h1 Departure Receipt
+  form(action="form/submit", method="POST")
+    .txt-field
+      input(type="text", name="customersname")
+      span
+      label Customer's Name
+    .txt-field
+      input(type="text", name="phonenumber")
+      span
+      label Phone Number
+    .gender
+      label Gender:
+      br
+      input(type="radio", name="gender", value="male", checked)
+      |  Male
+
+      input(type="radio", name="gender", value="female")
+      |  Female
+
+      span
+    .txt-field
+      input(type="text", name="nin")
+      span
+      label NIN
+    .txt-field
+      input(type="text", name="departuretime")
+      span
+      label Departure Time
+    .txt-field
+      input(type="text", name="date")
+      span
+      label Date
+    .submit
+      input(type="submit", name="submit", value="submit")
+      input(type="submit", name="print", value="print")
+script(src="/public/validation/departureReceiptValidate.js")

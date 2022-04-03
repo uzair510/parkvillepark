@@ -1,0 +1,79 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="preconnect", href="eapis.com")
+link(rel="stylesheet",type="text/css", href="/css/homecss.css")
+title Parkville parking
+.header
+  form(action="/form/submit", method="GET")
+    input.search(type="text", name="text", placeholder=" ")
+    input.submit(type="submit", name="submit", value="Search")
+  .inner-header
+    .logo-container
+      //   <img src="/images/pp-logo.png" alt=""> 
+      h2
+        | Parkville Park
+        span
+    ul.navigation
+      a(href="/home")
+        li Home
+      a
+        li About
+      a
+        li Contact
+      a(href="/login")
+        li Log out
+.sidebar-menu
+  ul
+    a(href="/vehicleEntry")
+      li Vehicle Entry
+    a(href="/batteryHireEntry")
+      li Battery Hire Entry
+    a(href="/carTyreClinic")
+      li Car Tyre Entry
+    a(href="/signup")
+      li Management Registry
+    a(href="/departureReceipt")
+      li Departure Receipt
+    a(href="/revenueEntry")
+      li Revenue
+.main-content
+  .vehicles
+    .trucks
+      div
+        h1 22
+        span Trucks
+      div
+        span
+          img(src="icons/truck-icon.png", alt)
+    .personal-cars
+      div
+        h1 18
+        span Personal Cars
+      div
+        span
+          img(src="icons/personalcar-icon.png", alt)
+    .taxis
+      div
+        h1 24
+        span Taxis
+      div
+        span
+          img(src="icons/taxi-icon.png", alt)
+    .coasters
+      div
+        h1 42
+        span Coasters
+      div
+        span
+          img(src="icons/coaster-icon.png", alt)
+    .bodabodas
+      div
+        h1 63
+        span Bodabodas
+      div
+        span
+          img(src="icons/bodaboda-icon.png", alt)
+.footer
+  p All rights reserved @ Balenzi Phillip - 0755780352
+script(src="/public/validation/homeValidate.js")

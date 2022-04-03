@@ -1,0 +1,21 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", type="text/css", href="/css/batteryHireEntrycss.css")
+title batteryHireEntry
+.center
+  h1 Battery Section
+  form#form(action="/batteryHireEntry", method="POST", name="entryForm", onsubmit="return validate()")
+    .txt-field
+      input#batterysize(type="text", name="batterysize")
+      span
+      label#label-batterysize(for="batterysize") Battery size
+      .text-danger#bsize
+    .txt-field
+      input#price(type="text", name="price")
+      span
+      label#label-price(for="price") Price
+      .text-danger#bprice
+    .submit
+      input(type="submit", name="submit", value="submit")
+script(src="/validation/batteryHireEntryValidate.js")

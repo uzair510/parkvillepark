@@ -1,0 +1,40 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", type="text/css", href="/css/carTyreCliniccss.css")
+title Car Tyre Clinic
+.center
+  h1 Car Tyre Section
+  form#form(action="/carTyreClinic", method="POST", name="entryForm")
+    .s-category
+      .text-danger#tservicecategory
+      label#label-servicecategory(for="category") Service Category:
+      select#select(name="category")
+        option(value="default", selected) (select one option)
+        option(value="bt") Buying new tyre
+        option(value="tp") Tyre Pressure
+        option(value="p") Puncture
+        option(value="v") Valve
+    .txt-field
+      input#tyresize(type="text", name="tyresize")
+      span
+      label#label-tyresize(for="tyresize") Tyre size
+      .text-danger#ttyresize
+    .txt-field
+      input#tyremake(type="text", name="tyremake")
+      span
+      label#label-tyremake(for="tyremake") Tyre Make
+      .text-danger#ttyremake
+    .txt-field
+      input#carmodel(type="text", name="carmodel")
+      span
+      label#label-carmodel(for="carmodel") Car Model
+      .text-danger#tcarmodel
+    .txt-field
+      input#charge(type="text", name="charge")
+      span
+      label#label-charge(for="charge") Charge
+      .text-danger#tcharge
+    .submit
+      input(type="submit", name="submit", value="submit")
+script(src="/validation/carTyreClinicValidate.js")

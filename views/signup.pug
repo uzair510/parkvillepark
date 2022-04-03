@@ -1,0 +1,40 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet",type="text/css", href="/css/signupcss.css")
+title Sign-up Page
+//  <div id="error"></div> 
+.center
+  h1 Signup Form
+  form#form(name="entryForm", action="/signup", method="POST")
+    .txt-field
+      input#username(type="text", name="username")
+      label Username
+      span
+    .txt-field
+      input#email(type="text", name="email")
+      label E-mail
+      span
+    .txt-field
+      input#nin(type="text", name="nin")
+      label National Identification Number (NIN)
+      span
+    .txt-field
+      input#password(type="password", name="password")
+      label Password
+      span
+    .gender
+      label Gender:
+      br
+      input(type="radio", name="gender", value="male", checked)
+      |  Male
+      div
+      input(type="radio", name="gender", value="female")
+      |  Female
+
+      span
+    .submit
+      input(type="submit", name="submit")
+script(src="/public/validation/signupValidate.js").
+  
+  
